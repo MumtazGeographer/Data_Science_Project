@@ -1,0 +1,26 @@
+Data Analysis with Python (IBM DA0101EN)
+    In this module we will learn about:
+          1. A problem requiring data analysis
+          2. A dataset to be analyzed in Python
+          3. Overview of Python Package for data Analysis
+          4. Import and Export data in Python
+          5. Basic Insights from the data
+    Why Data Analysis?
+         1. Data is everywhere
+         2. Data Analysis / Data Science help us answer question from data.
+         3. Data Analysis play important role in:
+             i. Discovering useful information
+             ii. Answer questions
+             iii. Predicting future or the unknown.
+    Python Package for Data Science
+    1. Scientific Computing Library:
+         1.Pandas - Data Structure & tool
+         2. Numpy - Array & Matrics
+         3. Scipy -  Integrals, solving differential equation, optimization
+    2. Data Visualization:
+         1. Matplotlib - Plots & graph, most popular
+         2. Seaborn - Plots & heat map, time series, violin plots.
+    3. Algorithmic Libraries:
+         1. Scikit-learn - Machine Learning , linear Regression, classification
+         2. Statsmodels - Explore data, estimate statistical models and performance statistics tests.
+         """
