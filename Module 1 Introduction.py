@@ -22,7 +22,7 @@ def download (url, filename):
         with open(filename, "wb") as f:
             f.write(response.content)
 
-# Read Data
+### Read Data
 
 # Download the date in local machine.
 download(path, "auto.csv")
@@ -32,12 +32,13 @@ df = pd.read_csv(path, header=None)
 
 print df.head(5)
 
-# QUESTION NO 1: Check the bottom 10 rows of data frame "df".
+""" 
+QUESTION NO 1: Check the bottom 10 rows of data frame "df".
 
-print df.tail(10)
+ Hindprint df.tail(10)
+"""
 
-
-# Add Headers
+### Add Headers
 # create headers list
 headers = ["symboling","normalized-losses","make","fuel-type","aspiration", "num-of-doors","body-style",
          "drive-wheels","engine-location","wheel-base", "length","width","height","curb-weight","engine-type",
@@ -49,3 +50,43 @@ print headers
 df.columns = headers
 print df.head(10)
 
+""" 
+QUESTION NO : 2 Find the name of the columns of the dataframe.
+
+Hinds : print df.columns
+"""
+
+### SAVE DATA
+df.to_csv("automobile.csv", index=False)
+
+### BASIC INSIGHT OF THE DATASET
+# Data Type : Data has variety type, including object, float, int bool datetime64.
+print df.dtypes
+
+# Describe: To get the statistical summary of the each columns, count value, mean value, standard deviation  etc.
+print df.describe()
+
+# Describe function by default work on Int type, however we can apply all.
+print df.describe(include='all')
+
+""""
+Question #3: 
+You can select the columns of a dataframe by indicating the name of each column. For example, you can select the three columns as follows:
+
+dataframe[[' column 1 ',column 2', 'column 3']]
+
+Where "column" is the name of the column, you can apply the method ".describe()" to get the statistics of those columns as follows:
+
+dataframe[[' column 1 ',column 2', 'column 3'] ].describe()
+
+Apply the method to ".describe()" to the columns 'length' and 'compression-ratio'.
+
+"""
+
+# Answer 3:
+print df[['length', 'compression-ratio']].describe()
+
+# Info : Concise summary of the dataframe.
+df.info()
+
+# LAB No 1: END - THANK YOU!
