@@ -1,0 +1,42 @@
+Learning Objective:
+    1. Identify and handing missing values.
+    2. Data Formatting
+    3. Data Normaliztion (Centering/scaling)
+    4. Data Binning
+    5. Turing Categorical values to numerical variable.
+
+    # Dealing with missing value in Python.
+        i. What is missing value.
+        ii. Missing value occur when no data value is stored for a variable (features) is an observation.
+        iii. Could be repsented as "?", 0 or just blank cell.
+
+    # How to deal with missing value.
+        i. Check with the data collection source.
+        ii. Drop the missing value.
+            > Drop the variable
+            > Drop the data entry
+        iii. Replace the missing value.
+            > Replace with Average value.
+            > Replace it by frequency
+            > Replace it with other function.
+        Leave it as missing data
+
+    # How to drop missing value in Python
+        i. Use dropna() in dataframe.
+            > Axis=0 drops the entire row
+            > axis=1 drops the entire columns
+    # How to replace missing value in Python
+        i. Use replace() in dataframe.
+
+    # Data Formatting:
+        i. Data are usually collected from different palce and store in differnt formats.
+        ii. Bringing data into a common standard of expression allows user to make meaningful comparison.
+
+    # Data Types in Pandas
+        i. Object : String or text e.g "A", "Hello"
+        ii. Int64 : 1,2,3
+        iii. Float64 : 2.50, 50.24
+
+    # Data Normalization:
+
+
