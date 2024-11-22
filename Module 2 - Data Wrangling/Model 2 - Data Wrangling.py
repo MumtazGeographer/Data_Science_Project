@@ -114,3 +114,25 @@ print df.head()
 
 # Correct Data Format, dtype() and astype()
 print df.dtypes
+
+df[["bore", "stroke"]] = df[["bore", "stroke"]].astype("float")
+df[["normalized-losses"]] = df[["normalized-losses"]].astype("int")
+df[["price"]] = df[["price"]].astype("float")
+df[["peak-rpm"]] = df[["peak-rpm"]].astype("float")
+
+print df.dtypes
+
+print df.head()
+
+# Covert mpg to L/100km by mathematical operation (235 divided by mpg)
+df['City-L/100KM'] = 235/df['city-mpg']
+print df.head()
+
+
+# Write your code below and press Shift+Enter to execute
+df['highway-mpg'] = 235/df['highway-mpg']
+
+df.rename(columns={'highway-mpg':'highway-L/100km'}, inplace=True)
+
+print df.head()
+
