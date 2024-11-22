@@ -38,5 +38,19 @@ Learning Objective:
         iii. Float64 : 2.50, 50.24
 
     # Data Normalization:
+        Method of normalizing data.
+            i. Simple Feature Scaling
+            ii. Min-Max
+            iii. Z Score
+
+    # Binning in Data
+        i. Binning : Grouping of value into "bins"
+        ii. Convert numerical into categorical variables.
+        iii. Group a set of numerical range from 5000 to 45000.
+
+    # Turing categorical variables into quantitative variable in Python
+        Problem: i. Most statistical models cannot take in the object as input.
+        Solution: i. Add dummy variables for each unique category
+                  ii. Asign 0 & 1 in each category. (One Hot Encoding)
 
 
